@@ -5,9 +5,11 @@
 import time
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 import scipy.io as sio
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
 #import csv
 #import pandas as pd
 
@@ -20,16 +22,32 @@ X_data = mat_contents['data_all']
 
 #X_data = pd.read_csv('data.csv')
 
-#-----Standardizing the features-----#
-X_data = StandardScaler().fit_transform(X_data)
+#scaler = MinMaxScaler(feature_range=[0, 1])
+#X_data1 = scaler.fit_transform(X_data)
 
-#-----User giving Dimension-----#
+#-----Standardizing the features-----#
+scaler = StandardScaler(copy=True, with_mean= True, with_std=True)
+X_data = scaler.fit_transform(X_data)
+
+ #-----User giving Dimension-----#
 #comp = int(input("Enter no of principle components: "))
 
 #-----PCA-----#
 
 pca = PCA(n_components=2)
-X_comp = pca.fit_transform(X_data)
+X_comp = PCA().fit_transform(X_data)
+#pca = PCA(.95)
+#pca = PCA()
+#X_pca = pca.fit(X_data)
+#
+#Plotting the Cumulative Summation of the Explained Variance
+#plt.figure()
+#plt.plot(np.cumsum(X_pca.explained_variance_ratio_))
+#plt.xlabel('Number of Components')
+#plt.ylabel('Variance (%)') #for each component
+#plt.title('Pulsar Dataset Explained Variance')
+#plt.show()
+
 
 #-----2D Plot-----#
 fig = plt.figure()

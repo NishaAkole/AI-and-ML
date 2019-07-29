@@ -36,7 +36,7 @@ X_data = scaler.fit_transform(X_data)
 
 #For 2 Principal Components
 pca = PCA(n_components=2)
-X_comp = PCA().fit_transform(X_data)
+X_comp = pca.fit_transform(X_data)
 
 ##-----2D Plot-----#
 fig = plt.figure()

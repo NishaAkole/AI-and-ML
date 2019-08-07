@@ -41,19 +41,19 @@ Z = Z.reshape(xx.shape)
 
 ##-----Plotting SVM Decision Region Boundary-----#
 plot_decision_regions(X, y.astype(np.integer), clf= X_svm, legend=2)
-plt.title('SVM Hyperplane without inbuilt Funcation')
+plt.title('SVM Hyperplane for Non-Linear Kernel')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
-plt.savefig('../figs/SVMHyperPlane_woFun.png')
-plt.savefig('../figs/SVMHyperPlane_woFun.eps')
+plt.savefig('../figs/HyperPlane_NLin.png')
+plt.savefig('../figs/HyperPlane_NLin.eps')
 
 plt.scatter(X[:, 0], X[:, 1], s=30, c=y, cmap=plt.cm.Paired,edgecolors='k')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
-plt.title('SVM with Non-Linear Kernel in 2D without inbuilt Funcation') 
+plt.title('SVM with Non-Linear Kernel in 2D') 
 #plt.show()
-plt.savefig('../figs/SVM_2D_woFun.png')
-plt.savefig('../figs/SVM_2D_woFun.eps')
+plt.savefig('../figs/NLinSVM_2D.png')
+plt.savefig('../figs/NLinSVM_2D.eps')
 
 #-----Print Time Required-----#
 print("--- %s seconds ---" % (time.time() - start_time))

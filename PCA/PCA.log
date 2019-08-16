@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.31)  2 AUG 2019 06:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.31)  16 AUG 2019 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -249,6 +249,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
@@ -284,7 +294,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
-\symwasy=\mathgroup4
+\symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
@@ -302,7 +312,7 @@ Package: amsthm 2017/10/31 v2.20.4
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup5
+\symrsfs=\mathgroup7
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
@@ -313,7 +323,7 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
-\symitalic=\mathgroup6
+\symitalic=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
 (Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
@@ -349,9 +359,10 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
-\symlettersA=\mathgroup7
+\symlettersA=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
 (Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
 LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
@@ -359,10 +370,18 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
-\symAMSa=\mathgroup8
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
 (Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
-\symAMSb=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
 (Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
 \symsymbolsC=\mathgroup10
@@ -501,64 +520,58 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (./PCA.aux
-
-LaTeX Warning: Label `fig: 2D Plot' multiply defined.
-
-
-LaTeX Warning: Label `fig: 3D Plot' multiply defined.
-
-)
+) (./PCA.aux)
 \openout1 = `PCA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 69.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 69.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 73.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 73.
 
- (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 69.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 73.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 69.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 73.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 69.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 73.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 69.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 73.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 69.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
+LaTeX Info: Redefining \celsius on input line 73.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 73.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 69.
-Package gensymb Info: Using \Omega for \ohm on input line 69.
+LaTeX Info: Redefining \ohm on input line 73.
+Package gensymb Info: Using \Omega for \ohm on input line 73.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -643,36 +656,36 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count149
 \c@definition=\count150
 \c@rem=\count151
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 135.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 135.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 135.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Try loading font information for U+txmia on input line 135.
-
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Try loading font information for U+txsya on input line 135.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 139.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 139.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 135.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 139.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 135.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 139.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 139.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 139.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 139.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -682,51 +695,35 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout3 = `PCA.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
 
+ []
+
+
+Overfull \hbox (24.60501pt too wide) detected at line 208
+\OML/txmi/m/it/12 X[]cov \OT1/txr/m/n/12 = [] = []
  []
 
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<figs/PCA_2D.png, id=14, 433.62pt x 289.08pt>
+<figs/PCA_2D.png, id=16, 433.62pt x 289.08pt>
 File: figs/PCA_2D.png Graphic file (type png)
 <use figs/PCA_2D.png>
-Package pdftex.def Info: figs/PCA_2D.png  used on input line 217.
+Package pdftex.def Info: figs/PCA_2D.png  used on input line 251.
 (pdftex.def)             Requested size: 216.81pt x 144.53964pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/PCA_3D.png, id=16, 433.62pt x 289.08pt>
+<figs/PCA_3D.png, id=18, 433.62pt x 289.08pt>
 File: figs/PCA_3D.png Graphic file (type png)
 <use figs/PCA_3D.png>
-Package pdftex.def Info: figs/PCA_3D.png  used on input line 225.
+Package pdftex.def Info: figs/PCA_3D.png  used on input line 259.
 (pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
 
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 225--226
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/PCA_2D_woFun.png, id=17, 433.62pt x 289.08pt>
-File: figs/PCA_2D_woFun.png Graphic file (type png)
-<use figs/PCA_2D_woFun.png>
-Package pdftex.def Info: figs/PCA_2D_woFun.png  used on input line 233.
-(pdftex.def)             Requested size: 216.81pt x 144.53964pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/PCA_3D_woFun.png, id=18, 433.62pt x 289.08pt>
-File: figs/PCA_3D_woFun.png Graphic file (type png)
-<use figs/PCA_3D_woFun.png>
-Package pdftex.def Info: figs/PCA_3D_woFun.png  used on input line 241.
-(pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
-
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 241--242
+Overfull \hbox (22.6262pt too wide) in paragraph at lines 259--260
  [] 
  []
 
@@ -736,44 +733,41 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <figs/Accuracy.png, id=19, 433.62pt x 289.08pt>
 File: figs/Accuracy.png Graphic file (type png)
 <use figs/Accuracy.png>
-Package pdftex.def Info: figs/Accuracy.png  used on input line 251.
+Package pdftex.def Info: figs/Accuracy.png  used on input line 283.
 (pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
 
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 251--252
+Overfull \hbox (22.6262pt too wide) in paragraph at lines 283--284
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./figs/PCA_2D.png> <./figs/PCA_3D.png> <./figs/PCA_2D_woFun.png>] [3
-
- <./figs/PCA_3D_woFun.png> <./figs/Accuracy.png>] (./PCA.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[2 <./figs/PCA_2D.png> <./figs/PCA_3D.png> <./figs/Accuracy.png>] (./PCA.aux) )
+ 
 Here is how much of TeX's memory you used:
- 8750 strings out of 492616
- 130056 string characters out of 6129481
- 262328 words of memory out of 5000000
- 12478 multiletter control sequences out of 15000+600000
- 74538 words of font info for 170 fonts, out of 8000000 for 9000
+ 8781 strings out of 492616
+ 130518 string characters out of 6129481
+ 253797 words of memory out of 5000000
+ 12502 multiletter control sequences out of 15000+600000
+ 75914 words of font info for 172 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,6n,39p,585b,1064s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2019/texmf-d
-ist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/u
-rw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on PCA.pdf (3 pages, 154573 bytes).
+ 41i,11n,39p,270b,1064s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
+public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/
+txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on PCA.pdf (2 pages, 118407 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

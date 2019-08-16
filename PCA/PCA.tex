@@ -15,6 +15,7 @@
 \usepackage{graphicx}
 \graphicspath{ {./images}  }
 \usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{wasysym}
 \usepackage{amsthm}
@@ -27,7 +28,7 @@
 \usepackage{subfig}
 \usepackage{enumerate}	
 \usepackage{enumitem}
-\usepackage{amsmath}
+\usepackage{amsmath, amssymb}
 
 \usepackage{longtable}
 \usepackage{multirow}
@@ -52,7 +53,10 @@
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 \hyphenation{op-tical net-works semi-conduc-tor}
-\def\inputGnumericTable{}                            
+\def\inputGnumericTable{}
+\def\SPSB#1#2{\rlap{\textsuperscript{\textcolor{black}{#1}}}\SB{#2}}
+\def\SP#1{\textsuperscript{\textcolor{black}{#1}}}
+\def\SB#1{\textsubscript{\textcolor{black}{#1}}}                            
 
 \lstset{
 %language=python,
@@ -163,7 +167,11 @@ X_data = mat_contents['data_all']
 \end{lstlisting}
 
 \section{About PCA}
-Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entitles each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components.
+Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.
+\begin{lstlisting}
+cov[PC1, PC2] = E[PC1PC2] - E[PC1]E[PC2]=0
+\end{lstlisting}
+Where, PC - principal components
 There are four main operations in the PCA:\\
 		1) Pre-processing\\
 		2) Co-variance Matrix\\
@@ -171,8 +179,8 @@ There are four main operations in the PCA:\\
 		4) Feature Vector and Plot
 
 \section{Pre-processing}
-Take the whole dataset ignoring the labels. Feature scaling is an important task in PCA because various scales of feature will affect and we may not get an optimized output. The functions  StandardScaler or MinMaxScaler will standardize the features by making mean $=0$ and variance $=1$. These functions are imported from sklearn.preprocessing. 
-StandardScaler uses formula such as 
+Feature scaling is an important task in PCA to get an optimized output. The functions  StandardScaler or MinMaxScaler will perform mean normalization by making mean $=0$ and variance $=1$.
+StandardScaler Function : 
 $$ z = (X-\mu)/\sigma$$
 where, $\mu = $Mean of data X\\
 $\sigma =$Standard Deviation of data X\\
@@ -184,24 +192,50 @@ $\sigma =X.std(0)$
 X_std$ = (X-\mu)/\sigma$
 \end{lstlisting}
 
-X.mean(0) and X.std(0) will give columnwise mean and standard deviation of our data matrix.
+%X.mean(0) and X.std(0) will give columnwise mean and standard deviation of our data matrix.
 
 \section{Compute Covariance Matrix}
-Computing the covariance matrix will help us to understand the relationship between the variables. If variables are highly correlated, they contain redundant information. Covariance matrix will be symmetric with diagonal values as a variance of the corresponding element. If variables are increasing or decreasing together, then its positive covariance.If one variable is increasing and other is decreasing, sign of covariance will be negative.
+\[
+   X\_cov=
+  \begin{bmatrix}
+   var_{PC1} & cov_{PC1,PC2} \\
+   cov_{PC1,PC2} & var_{PC2} \\
+  \end{bmatrix} = 
+  \begin{bmatrix}
+   \sigma\SPSB{2}{PC1} & \sigma_{PC1,PC2} \\
+   \sigma_{PC1,PC2} & \sigma\SPSB{2}{PC2} \\
+  \end{bmatrix} 
+  \]
+
+If variables are highly correlated, they contain redundant information.
+\begin{center} $\mathbf{X\_cov}^\intercal$ = X\_cov \end{center} 
  
 \begin{lstlisting}[mathescape=true]
 X_cov = np.cov(X_std)
 \end{lstlisting}
 
 \section{Compute Eigenvectors}
-The diagonal values of covariance matrix are the eigenvalues of a covariance matrix where large eigenvalues correspond to large variance. Eigenvector of covariance matrix is the axes along with data has maximum variation. Eigenvalues and eigevectors can be calculated by taking Singular Value Decomposition(SVD) of a covariance matrix. Eigenvalues are arranged in decreasing order in sigma matrix and its corresponding eigenvector is arranged in U which is left eigenvector or eigenvector of np.matmul(X\_cov,X\_cov'), where X\_cov' is transpose of X\_cov.
+Eigenvalues and eigevectors can be calculated by Singular Value Decomposition(SVD) of a covariance matrix. 
+\begin{center} X\_cov = U $\Sigma$ $\mathbf{V}^\intercal$ \end{center}Eigenvalues are arranged in decreasing order in sigma matrix and its corresponding eigenvector is arranged in U.
+
+\begin{center} $\mathbf{\Sigma}^\intercal$ = $\Sigma$ \end{center} 
+
 \begin{lstlisting}[mathescape=true]
-U, $\Sigma$, VT = randomized_svd(X_cov, n_components=10 ,n_iter= 5, random_state=none)
+U, $\Sigma$, $\mathbf{V}^\intercal$ = randomized_svd(X_cov, n_components=2 ,n_iter= 5, random_state=none)
 \end{lstlisting}
-n\_components will consider first 10 largest eigenvalues. Hence, first 10 eigenvectors will be used for plotting the data and these eigenvectors are known as principal components which carries maximum information.
+
+n\_components will consider first 2 largest eigenvalues. Hence, first 2 eigenvectors will be used for plotting the data. 
+%these eigenvectors are known as principal components which carries maximum information.
 
 \section{Principal Component and plot}
-To visualize the data either we can plot it in 2D or 3D. But sometime first 2 or 3 principal components are not sufficient to retain the maximum information from dataset. In such case, no of principal components can be decided by taking ratio of first K eigenvalues to sum of all the eigenvalues. If the ratio is closer to 0.95 then these K principal components are taken. Link for PCA without function is given below:
+To visualize the data, only 2 or 3 principal components are needed.
+To decide K principal components out of n to retain maximum information:
+
+\begin{center}
+$\frac{\sum\SPSB{k}{i=1}{First K Diagona Elements}}{\sum{All Diagonal Elements}} >= 0.99$
+\end{center}
+
+Link for PCA without function is given below:
 \begin{lstlisting}[mathescape=true]
 https://github.com/NishaAkole/AI-and-ML/blob/master/codes/pca/PCAwithoutFun.py
 \end{lstlisting}
@@ -228,23 +262,21 @@ https://github.com/NishaAkole/AI-and-ML/blob/master/codes/pca/PCAFun.py
 \label{fig: 3D Plot}
 \end{figure}
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=3in]{figs/PCA_2D_woFun.png}
-\end{center}
-\caption{PCA without Function 2D}
-\label{fig: 2D Plot}
-\end{figure}
+%\begin{figure}[!h]
+%\begin{center}
+%\includegraphics[width=3in]{figs/PCA_2D_woFun.png}
+%\end{center}
+%\caption{PCA without Function 2D}
+%\label{fig: 2D Plot}
+%\end{figure}
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=3.8in]{figs/PCA_3D_woFun.png}
-\end{center}
-\caption{PCA without Function 3D}
-\label{fig: 3D Plot}
-\end{figure}
-
-Above plots help us to visualize the data. To get more idea on principal component and and amount of information it contain through plot below:
+%\begin{figure}[!h]
+%\begin{center}
+%\includegraphics[width=3.8in]{figs/PCA_3D_woFun.png}
+%\end{center}
+%\caption{PCA without Function 3D}
+%\label{fig: 3D Plot}
+%\end{figure}
 
 \begin{figure}[!h]
 \begin{center}
@@ -254,7 +286,7 @@ Above plots help us to visualize the data. To get more idea on principal compone
 \label{fig: }
 \end{figure}  
 
-Clearly, only two or three prin. comp does not contain much info. Hence, PCA is not a good approach for dimensionality reduction for this data.
+From fig. 5, we are not able to reduce the dimensionality below 8000. Hence, PCA is not a good approach for dimensionality reduction for this data.
 
 \end{document}
 

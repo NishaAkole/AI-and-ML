@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.31)  2 AUG 2019 07:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.31)  14 AUG 2019 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,54 +514,54 @@ LaTeX Warning: Label `fig: 3D Plot' multiply defined.
 )
 \openout1 = `SVM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 66.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 66.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 69.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 69.
 
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 66.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 69.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 66.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 69.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 66.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 69.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 66.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 69.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 66.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 66.
+LaTeX Info: Redefining \celsius on input line 69.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 69.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 66.
-Package gensymb Info: Using \Omega for \ohm on input line 66.
+LaTeX Info: Redefining \ohm on input line 69.
+Package gensymb Info: Using \Omega for \ohm on input line 69.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -646,36 +646,36 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count149
 \c@definition=\count150
 \c@rem=\count151
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 133.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 133.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 138.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 138.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 133.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 138.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 133.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 138.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 133.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 138.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 133.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 138.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 133.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 138.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -685,22 +685,27 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout3 = `SVM.toc'.
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 154--156
+Underfull \hbox (badness 1708) in paragraph at lines 159--160
 []\OT1/txr/m/n/12 Support Vec-tor Ma-chine(SVM) is su-per-vised
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
+Overfull \hbox (21.30333pt too wide) detected at line 171
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
@@ -708,131 +713,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
 
 ]
-Underfull \hbox (badness 1655) in paragraph at lines 186--187
+Underfull \hbox (badness 1655) in paragraph at lines 221--222
 \OT1/txr/m/n/12 dif-fer-ent ker-nels. Use of ker-nel is to-tally
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 188--189
+Underfull \hbox (badness 1466) in paragraph at lines 223--224
 []\OT1/txr/m/n/12 Regularization Pa-ram-e-ter(C): It is used to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 191--192
+Underfull \hbox (badness 3746) in paragraph at lines 225--226
 []\OT1/txr/m/n/12 Gamma: A lower value of gamma will
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 210--211
+Underfull \hbox (badness 2809) in paragraph at lines 244--245
 []\OT1/txr/m/n/12 The SVM hyper-parameters are cost and
  []
 
-<figs/LinSVM_2D.png, id=13, 433.62pt x 289.08pt>
+<figs/LinSVM_2D.png, id=16, 433.62pt x 289.08pt>
 File: figs/LinSVM_2D.png Graphic file (type png)
 <use figs/LinSVM_2D.png>
-Package pdftex.def Info: figs/LinSVM_2D.png  used on input line 216.
+Package pdftex.def Info: figs/LinSVM_2D.png  used on input line 250.
 (pdftex.def)             Requested size: 252.94499pt x 168.63252pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 216--217
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 250--251
  [] 
  []
 
-<figs/LinSVM_3D.png, id=15, 433.62pt x 289.08pt>
+<figs/LinSVM_3D.png, id=18, 433.62pt x 289.08pt>
 File: figs/LinSVM_3D.png Graphic file (type png)
 <use figs/LinSVM_3D.png>
-Package pdftex.def Info: figs/LinSVM_3D.png  used on input line 224.
+Package pdftex.def Info: figs/LinSVM_3D.png  used on input line 258.
 (pdftex.def)             Requested size: 281.85255pt x 187.90858pt.
 
-Overfull \hbox (29.85255pt too wide) in paragraph at lines 224--225
+Overfull \hbox (29.85255pt too wide) in paragraph at lines 258--259
  [] 
  []
 
-<figs/HyperPlane_Lin.png, id=16, 433.62pt x 289.08pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/HyperPlane_Lin.png, id=19, 433.62pt x 289.08pt>
 File: figs/HyperPlane_Lin.png Graphic file (type png)
 <use figs/HyperPlane_Lin.png>
-Package pdftex.def Info: figs/HyperPlane_Lin.png  used on input line 232.
+Package pdftex.def Info: figs/HyperPlane_Lin.png  used on input line 266.
 (pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
 
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 232--233
+Overfull \hbox (22.6262pt too wide) in paragraph at lines 266--267
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/NLinSVM_2D.png, id=17, 433.62pt x 289.08pt>
+<figs/NLinSVM_2D.png, id=20, 433.62pt x 289.08pt>
 File: figs/NLinSVM_2D.png Graphic file (type png)
 <use figs/NLinSVM_2D.png>
-Package pdftex.def Info: figs/NLinSVM_2D.png  used on input line 240.
+Package pdftex.def Info: figs/NLinSVM_2D.png  used on input line 274.
 (pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
 
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 240--241
+Overfull \hbox (22.6262pt too wide) in paragraph at lines 274--275
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figs/HyperPlane_NLin.png, id=18, 433.62pt x 289.08pt>
+<figs/HyperPlane_NLin.png, id=21, 433.62pt x 289.08pt>
 File: figs/HyperPlane_NLin.png Graphic file (type png)
 <use figs/HyperPlane_NLin.png>
-Package pdftex.def Info: figs/HyperPlane_NLin.png  used on input line 248.
+Package pdftex.def Info: figs/HyperPlane_NLin.png  used on input line 282.
 (pdftex.def)             Requested size: 274.6262pt x 183.09177pt.
 
-Overfull \hbox (22.6262pt too wide) in paragraph at lines 248--249
+Overfull \hbox (22.6262pt too wide) in paragraph at lines 282--283
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./figs/LinSVM_2D.png> <./figs/LinSVM_3D.png>]
+[2 <./figs/LinSVM_2D.png>]
 
 LaTeX Warning: Text page 3 contains only floats.
 
-[3
 
- <./figs/HyperPlane_Lin.png> <./figs/NLinSVM_2D.png> <./figs/HyperPlane_NLin.pn
-g>] (./SVM.aux)
+Overfull \vbox (2.16466pt too high) has occurred while \output is active []
+
+
+[3 <./figs/LinSVM_3D.png> <./figs/HyperPlane_Lin.png> <./figs/NLinSVM_2D.png> <
+./figs/HyperPlane_NLin.png>] (./SVM.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8750 strings out of 492616
- 130136 string characters out of 6129481
- 214320 words of memory out of 5000000
- 12478 multiletter control sequences out of 15000+600000
- 74536 words of font info for 170 fonts, out of 8000000 for 9000
+ 8771 strings out of 492616
+ 130349 string characters out of 6129481
+ 236389 words of memory out of 5000000
+ 12495 multiletter control sequences out of 15000+600000
+ 80428 words of font info for 186 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,6n,39p,396b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,19n,39p,396b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on SVM.pdf (3 pages, 192881 bytes).
+exlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/txfonts/txsya.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
+times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb
+i8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on SVM.pdf (3 pages, 202369 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

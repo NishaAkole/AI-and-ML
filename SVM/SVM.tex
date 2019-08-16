@@ -53,7 +53,10 @@
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-\def\inputGnumericTable{}                               
+\def\inputGnumericTable{}
+\def\SPSB#1#2{\rlap{\textsuperscript{\textcolor{black}{#1}}}\SB{#2}}
+\def\SP#1{\textsuperscript{\textcolor{black}{#1}}}
+\def\SB#1{\textsubscript{\textcolor{black}{#1}}}                               
 
 \lstset{
 frame=single, 
@@ -115,6 +118,8 @@ columns=fullflexible
 \let\StandardTheFigure\thefigure
 \let\StandardTheTable\thetable
 
+
+
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
      \def\centbox#1{\makebox[0in]{#1}}
@@ -152,7 +157,34 @@ https://github.com/prabhatrai111/Commensal-Radar
 
 \section{About SVM}
 Support Vector Machine(SVM) is supervised machine learning algorithm which can be used for both classification or regression challenges. It is well known for its kernels, to classify non-linear data. SVM known as a discriminative classifier as it separates data points using a hyperplane with large margin.\\
-\begin{itemize}
+
+
+\begin{center}
+Sigmoid Function : $h_{\theta}(x) = {\frac{1}{1 + e}} $
+ \end{center}
+
+\text{Cost Function}:-
+\begin{align}
+    \begin{split}\label{eq:3.1}
+         {}& \min_{\mbf{\theta}} \frac{1}{m}\brak{\sum_{i=1}-y_{i}\log h_{\theta}\brak{x_{i}}+ \brak{1-y_{i}} \brak{-log\brak{1-h_{\theta}\brak{x_{i}}}}} \\+ & \frac{\lambda}{2m}\brak{\sum_{j=1}\theta \SPSB{2}{j}}
+    \end{split}
+\end{align}
+
+%\begin{align}
+%\text{Cost Function:}\min_{\mbf{\theta}} \frac{1}{m} \brak {\sum_{i=1}-y_{i}\log h_{\theta}\brak{x_{i}} +\brak{1 - y_{i}}\brak{- log \brak{1-h_{\theta}\brak{x_{i}}}}}\\
+% + \frac{\lambda}{2m} \brak{\sum_{j=1} \theta _{j}}
+%\end{align}
+
+Hypothesis will predict as
+\[
+    h_{\theta}(x) =
+    \begin{cases}
+        1 & \text{if $\mathbf{\theta}^\intercal \mathbf{x} \geq0$,}\\
+        0 & \text{otherwise.}
+    \end{cases}
+\]
+
+\begin{itemize}           
 \item Support Vector:\\
 	These are the data points closest to hyperplane and helps to define a proper margin.\\
 \item Hyperplane:\\
@@ -163,30 +195,32 @@ Support Vector Machine(SVM) is supervised machine learning algorithm which can b
 
 SVM can be divided into two types based on dataset and kernel used to classify it
 
-
 \subsection{Simple SVM}
 In Simple SVM, parameters are linear. Kernel used is also a linear kernel to classify a linear data.
 
 \begin{lstlisting}
-link for linear kernel code
+https://github.com/NishaAkole/AI-and-ML/blob/master/codes/svm/SVM.py
 \end{lstlisting}
 
 \subsection{Kernel SVM}
 Kernel SVM is used specially to classify non-linear data by using different kernels such as polynomial, gaussian radial basis function(rbf) and sigmoid.
- 
+
+\begin{align}
+K\brak{x,x\prime} = exp{\brak{\frac{-\norm{x-x\prime}\SP{2}}{2\sigma\SP{2}}}}
+\end{align}
+
 \begin{lstlisting}[mathescape=true]
-link for 2 non-linear kernel code
+https://github.com/NishaAkole/AI-and-ML/blob/master/codes/svm/SVM_NonLin.py
 \end{lstlisting}
 
 \section{Evaluating the Algorithm}
-Confusion matrix, accuracy, precision and recall are metrices used for checking the algorithm correctness. Scikit-learn is a free machine learning library for python, mostly used for various algorithms like support vector machine, principal component analysis, random forest etc. Sklearn contains classification\_report and confusion\_matrix for classification tasks.
+Confusion matrix, accuracy, precision and recall are matrices used for checking the algorithm correctness. Scikit-learn is a free machine learning library for python, mostly used for various algorithms like support vector machine, principal component analysis, random forest etc. Sklearn contains classification\_report and confusion\_matrix for classification tasks.
 
 \section{Tuning Hyperparameters}
 \begin{itemize}
 \item Kernel: SVM will give different output for different kernels. Use of kernel is totally dependent on the type of dataset. To get optimized output, one has to test different kernels for the good results.\\
 	
 \item Regularization Parameter(C): It is used to calculate error and helps to reduce it. C is also used to decide margin. A small value of C will create a small margin around hyperplane and large value will create large margin. By this parameter, we cancontrols trade off between smooth decision boundary and error.\\
-
 
 \item Gamma: A lower value of gamma will underfit the data and higher value of gamma will overfit the data.\\
 
